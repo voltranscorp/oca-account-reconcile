@@ -1,4 +1,4 @@
-odoo.define("account.ReconciliationModel", function (require) {
+odoo.define("account_reconciliation_widget.ReconciliationModel", function (require) {
     "use strict";
 
     var BasicModel = require("web.BasicModel");

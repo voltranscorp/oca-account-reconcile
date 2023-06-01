@@ -1,4 +1,4 @@
-odoo.define("account.ReconciliationClientAction", function (require) {
+odoo.define("account_reconciliation_widget.ReconciliationClientAction", function (require) {
     "use strict";
 
     var AbstractAction = require("web.AbstractAction");
@@ -337,11 +337,12 @@ odoo.define("account.ReconciliationClientAction", function (require) {
                 self.widgets.push(widget);
                 linePromises.push(widget.appendTo(self.$(".o_reconciliation_lines")));
             });
-            if (this.model.hasMoreLines() === false) {
-                this.renderer.hideLoadMoreButton(true);
-            } else {
-                this.renderer.hideLoadMoreButton(false);
-            }
+            console.log(this);
+            // if (this.model.hasMoreLines() === false) {
+            // this.renderer.hideLoadMoreButton(true);
+            // } else {
+            //     this.renderer.hideLoadMoreButton(false);
+            // }
             return Promise.all(linePromises);
         },
 

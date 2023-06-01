@@ -1,4 +1,4 @@
-odoo.define("account.ReconciliationRenderer", function (require) {
+odoo.define("account_reconciliation_widget.ReconciliationRenderer", function (require) {
     "use strict";
 
     var Widget = require("web.Widget");
